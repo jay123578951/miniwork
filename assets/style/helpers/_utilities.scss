@@ -1,0 +1,141 @@
+// Base
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+// Size
+.h-100vh {
+  height: 100vh;
+}
+.w-33 {
+  width: 33.333%;
+}
+
+// Text
+.h1 {
+  font-size: $h2-font-size;
+  line-height: 1.2;
+  letter-spacing: 0.25rem;
+  margin-bottom: 0;
+  @include desktop-1200() {
+    font-size: $h1-font-size;
+  }
+}
+.h2 {
+  font-size: 2rem; // $h3-font-size;
+  margin-bottom: 0;
+  @include desktop-1200() {
+    font-size: $h2-font-size;
+  }  
+}
+.h3 {
+  font-size: $h4-font-size;
+  margin-bottom: 0;
+  @include desktop-1200() {
+    font-size: $h3-font-size;
+  }  
+}
+.h4 {
+  font-size: $font-size-base;
+  margin-bottom: 0;
+  @include desktop-1200() {
+    font-size: 1.25rem;
+  }
+}
+.text-size-sm {
+  font-size: 0.875rem !important;
+}
+.text-size-normal {
+  font-size: 1rem !important;
+}
+
+// Line height
+.line-height-lg {
+  line-height: 1.5 !important;
+}
+
+// Text style
+.textBottomlLine {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: $warning;
+    z-index: -1;
+  }
+}
+
+// Color
+.body-bg {
+  background: $body-bg;
+}
+
+// Animation
+.animation {
+  transition: $transition-base;
+}
+.animation-fade {
+  transition: $transition-fade;
+}
+// Moving
+.animation-bottom-to-top {
+  animation-name: bottom-to-top;
+  animation-iteration-count: infinite;
+  @keyframes bottom-to-top{
+    from{
+      bottom: -10%;
+    }
+    to{
+      bottom: 110%;
+    }
+  }
+}
+// Scale
+.box-scale-sm {
+  transform: scale(0.95);
+}
+.box-scale-normal {
+  transform: scale(1);
+}
+.box-scale-lg {
+  transform: scale(1.05);
+}
+.box-scale--hover {
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.box-scale-sm--hover {
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+// Overflow
+.overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+.overflow-visible {
+  overflow: visible !important;
+}
+
+// Z-index
+.z-index-1 {
+  z-index: 1;
+}
+.z-index--1 {
+  z-index: -1;
+}

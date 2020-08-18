@@ -1,0 +1,25 @@
+@mixin mobile {
+  @media (min-width: 576px) {
+      @content
+  }
+};
+@mixin pad {
+  @media (min-width: 768px) {
+      @content
+  }
+};
+@mixin largePad {
+  @media (min-width: 992px) {
+      @content
+  }
+};
+@mixin desktop-1200 {
+  @media (min-width: 1200px) {
+      @content
+  }
+};
+@mixin FullHD {
+  @media (min-width: 1920px) {
+      @content
+  }
+};

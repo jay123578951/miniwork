@@ -1,0 +1,63 @@
+.works__navTabs {
+  position: relative;
+  margin-bottom: 2rem;
+  border-bottom: none;
+  @include largePad() {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(112,112,112,0.3);
+  }
+  li {
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    @include largePad() {
+      width: auto;
+    }
+    a {
+      position: relative;
+      // margin-right: 0;
+      margin: 0.25rem;
+      padding: 1rem;
+      color: $info;
+      border: 1px solid $border-color !important;
+      border-radius: 50rem !important;
+      font-weight: bold;
+      @include largePad() {
+        padding: 0.5rem 2rem;
+        border: none !important;
+        border-radius: 0 !important;
+      }
+    }
+    &:hover {
+      a {
+        color: $body-color;
+      }
+    }
+  }
+  .active {
+    color: $body-color;
+    border: 1px solid $body-color !important;
+    @include largePad() {
+      border: none !important;
+    }
+  }
+}
+
+
+.slider {
+  display: none;
+  width: 184px;
+  height: 4px;
+  background-color: $warning;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  // transition: all .3s linear;
+  @include largePad() {
+    width: 160px;
+    display: inline-block;
+  }
+  @include desktop-1200() {
+    width: 184px;
+  }
+}

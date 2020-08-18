@@ -1,0 +1,32 @@
+.btnMain {
+  color: #fff;
+  background: $primary;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+}
+
+.gotopBtn {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 1;
+  background: #fff;
+  padding: 0.5rem;
+  border: 2px solid $info;
+  border-radius: 50%;
+  outline: 0 !important;
+  .material-icons {
+    font-size: 2rem;
+    color: $info;
+  }
+  &:hover {
+    background: $primary;
+    border: 2px solid #fff;
+    .material-icons {
+      color: #fff;
+    }    
+  }
+}
