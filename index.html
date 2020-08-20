@@ -18,13 +18,32 @@
 
 <body id="body">
   <!-- Loading -->
-  <!-- <div class="loading" id="loading">
+  <div class="loading bg-secondary" id="loading">
     <div class="progress" id="progress">
       <div class="spinner-grow text-primary" role="status">
-        <span class="sr-only">Loading...</span>
+        <div class="openLoading__cnt">
+          <svg class="loading__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="100%" viewBox="0 0 574.558 120" enable-background="new 0 0 574.558 120" xml:space="preserve">
+            <defs>
+              <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+                <path fill="#fff" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+              </pattern>
+              
+              <text id="text" transform="matrix(1 0 0 1 -8.0684 116.7852)" font-size="161.047">miniwork</text>
+              
+              <mask id="text_mask">
+                <use x="0" y="0" xlink:href="#text" opacity="1" fill="#3498db"/>
+              </mask>
+            </defs>
+            
+            <use x="0" y="0" xlink:href="#text" fill="#3498db"/>
+            
+            <rect class="water-fill" mask="url(#text_mask)" fill="url(#water)" x="-400" y="0" width="1600" height="120"/>
+          </svg>
+        </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <header>
     <nav id="headerNav" class="headerNav navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">MINIWORK</a>
@@ -57,14 +76,15 @@
     <section class="banner text-center">
       <div class="banner__main container">
         <div class="banner__main__text mb-5 mb-md-7">
-          <h2 class="h2 font-weight-normal mb-2">MINIWORK</h2>
-          <h1 class="h1 text-secondary font-weight-bold ml-0 ml-md-3 mb-2"><span class="textBottomlLine">開店</span>平台，<span class="textBottomlLine">簡單</span>又強大！</h1>
-          <h4 class="h4 font-weight-normal line-height-lg mb-4 mb-md-5">完善的電商功能 + 訂單 0 抽成，<span class="d-block d-md-inline">讓你輕鬆管理網店無負擔。</span></h4>
-          <button type="button" class="btnMain btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          <h2 class="fadeUp__animation h2 font-weight-normal mb-2">MINIWORK</h2>
+          <h1 class="fadeUp__animation fadeUp__delay__3-7 h1 text-secondary font-weight-bold ml-0 ml-md-3 mb-2"><span class="textBottomlLine">開店</span>平台，<span class="textBottomlLine">簡單</span>又強大！</h1>
+          <h4 class="fadeUp__animation fadeUp__delay__3-9 h4 font-weight-normal line-height-lg mb-4 mb-md-5">完善的電商功能 + 訂單 0 抽成，<span class="d-block d-md-inline">讓你輕鬆管理網店無負擔。</span></h4>
+          <button type="button" class="fadeUp__animation fadeUp__delay__4-1 btnMain btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
             立即開店
           </button>
         </div>
         <div class="banner__main__phone container">
+          <img class="banner__main__arrow__img" src="./assets/images/arrow_down.svg" alt="">
           <img class="banner__main__phone__img" src="./assets/images/banner_phone.png" alt="">
         </div>
       </div>
@@ -123,9 +143,9 @@
       <div class="container">
         <h2 class="h2 text-center text-white mb-6 mb-md-7">我們能為您做什麼？</h2>
         <div class="row">
-          <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <article class="eSystem cubeCard rounded-lg">
-              <div class="cubeCard__cnt p-3 p-md-5">
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-sm-up">
+            <article class="eSystem card__1-to-1 rounded-lg">
+              <div class="card__1-to-1__cnt p-3 p-md-5">
                 <p class="mb-1">01</p>
                 <h3 class="h3 mb-3">品牌電商系統</h3>
                 <p class="mb-5 mb-md-7">三分鐘註冊即可上架商品，完善的訂單管理、購物車系統、金物流串接、行銷推廣工具，輕鬆開始你的網路開店！</p>
@@ -135,9 +155,9 @@
               </div>
             </article>
           </div>
-          <div class="col-12 col-lg-6" data-aos="fade-up">
-            <article class="companyWebsite cubeCard rounded-lg">
-              <div class="cubeCard__cnt p-3 p-md-5">
+          <div class="col-12 col-lg-6" data-aos="fade-sm-up" data-aos-delay="200">
+            <article class="companyWebsite card__1-to-1 rounded-lg">
+              <div class="card__1-to-1__cnt p-3 p-md-5">
                 <p class="mb-1">02</p>
                 <h3 class="h3 mb-3">企業形象官網</h3>
                 <p class="mb-3 mb-md-6">多種樣板與功能協助建置形象官網，公司簡介/最新消息/產品下載/聯絡表單...並可擴充單元，客製化網站設計服務，完美打造形象官網。</p>
@@ -155,13 +175,10 @@
     <section class="position-relative overflow-hidden py-7 py-md-9">
       <div class="container">
         <h2 class="h2 text-center mb-6 mb-md-7">多種功能滿足不同網路開店需求</h2>
-        <div class="row align-items-center mb-6 mb-md-7">
-          <div class="col-12 col-lg-4 m-auto pb-4 pb-lg-0" data-aos="fade-up" data-aos-delay="50">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3">LINE 機器人行銷</h3>
-            <p class="text-info m-0">關鍵字設定、機器人自動回覆、一站下單、商品推播... 與電商完美結合，透過對話輕鬆完成銷售。</p>
-          </div>
-          <div class="col-12 col-lg-7" data-aos="fade-up">
+        <div class="row flex-row-reverse align-items-center mb-6 mb-md-7">
+          <div class="col-12 col-lg-7 pb-4 pb-lg-0">
             <div class="lineRobot rounded-lg">
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
               <div class="lineRobot__hand animation">
                 <img src="./assets/images/present_03_hand.svg" alt="">
               </div>
@@ -170,14 +187,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row flex-row-reverse align-items-center mb-6 mb-md-7">
-          <div class="col-12 col-lg-4 m-auto pb-4 pb-lg-0" data-aos="fade-up" data-aos-delay="50">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3">聯盟行銷機制</h3>
-            <p class="text-info m-0">可輕鬆設定分潤機制並統計行銷數據，讓網紅、部落客輕鬆與你洽談合作推薦導購商品。 </p>
+          <div class="col-12 col-lg-4 m-auto">
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">LINE 機器人行銷</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">關鍵字設定、機器人自動回覆、一站下單、商品推播... 與電商完美結合，透過對話輕鬆完成銷售。</p>
           </div>
-          <div class="col-12 col-lg-7" data-aos="fade-up">
+        </div>
+        <div class="row align-items-center mb-6 mb-md-7">
+          <div class="col-12 col-lg-7 pb-4 pb-lg-0">
             <div class="alliance rounded-lg">
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
               <div class="alliance__phone">
                 <img class="animation" src="./assets/images/present_04_phone.svg" alt="">
               </div>
@@ -194,27 +212,29 @@
               </div>  
             </div>
           </div>
-        </div>
-        <div class="row align-items-center mb-6 mb-md-7">
-          <div class="col-12 col-lg-4 m-auto pb-4 pb-lg-0" data-aos="fade-up" data-aos-delay="50">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3">多元行銷模組</h3>
-            <p class="text-info m-0">靈活多元的行銷工具，折扣碼、優惠卷、紅利點數、滿額折扣...</p>
+          <div class="col-12 col-lg-4 m-auto">
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">聯盟行銷機制</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">可輕鬆設定分潤機制並統計行銷數據，讓網紅、部落客輕鬆與你洽談合作推薦導購商品。 </p>
           </div>
-          <div class="col-12 col-lg-7" data-aos="fade-up">
+        </div>
+        <div class="row flex-row-reverse align-items-center mb-6 mb-md-7">
+          <div class="col-12 col-lg-7 pb-4 pb-lg-0">
             <div class="MultiModule rounded-lg animation">
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
               <div class="MultiModule__word animation">
                 <img class="rounded-lg" src="./assets/images/present_05_word.svg" alt="">
               </div>
             </div>
           </div>
-        </div>
-        <div class="row flex-row-reverse align-items-center mb-6 mb-md-7">
-          <div class="col-12 col-lg-4 m-auto pb-4 pb-lg-0" data-aos="fade-up" data-aos-delay="50">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3">一頁式購物</h3>
-            <p class="text-info m-0">商品頁面可設定為一頁式購物功能，搭配社群或廣告行銷提升成交率！</p>
+          <div class="col-12 col-lg-4 m-auto" data-aos="fade-sm-up" data-aos-delay="50">
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">多元行銷模組</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">靈活多元的行銷工具，折扣碼、優惠卷、紅利點數、滿額折扣...</p>
           </div>
-          <div class="col-12 col-lg-7" data-aos="fade-up">
+        </div>
+        <div class="row align-items-center mb-6 mb-md-7">
+          <div class="col-12 col-lg-7 pb-4 pb-lg-0" data-aos="fade-sm-up">
             <div class="onepage rounded-lg animation">
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
               <div class="onepage__bg02 animation">
                 <img src="./assets/images/present_06_web_bg.svg" alt="">
               </div>
@@ -226,18 +246,23 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row align-items-center mb-0 mb-md-7">
-          <div class="col-12 col-lg-4 m-auto pb-4 pb-lg-0" data-aos="fade-up" data-aos-delay="50">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3">營運分析報表</h3>
-            <p class="text-info m-0">即時顯示商品訂單狀態、銷售統計，營運分析報表數據一目瞭然，快速掌握營運現況提升業績。</p>
+          <div class="col-12 col-lg-4 m-auto">
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">一頁式購物</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">商品頁面可設定為一頁式購物功能，搭配社群或廣告行銷提升成交率！</p>
           </div>
-          <div class="col-12 col-lg-7" data-aos="fade-up">
+        </div>
+        <div class="row flex-row-reverse align-items-center">
+          <div class="col-12 col-lg-7 pb-4 pb-lg-0" data-aos="fade-sm-up">
             <div class="analysisReport rounded-lg animation">
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
               <div class="analysisReport__notebook animation">
                 <img src="./assets/images/present_07_notebook.svg" alt="">
               </div>
             </div>
+          </div>
+          <div class="col-12 col-lg-4 m-auto">
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">營運分析報表</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">即時顯示商品訂單狀態、銷售統計，營運分析報表數據一目瞭然，快速掌握營運現況提升業績。</p>
           </div>
         </div>
       </div>
@@ -249,41 +274,35 @@
       </div>      
     </section>
 
-    <section class="position-relative mb-7 mb-md-0">
-      <div class="special__imgBlock">
-        <div class="special__img01 special__imgStyle">
-          <img src="./assets/images/features_img01.jpg" alt="">
-        </div>
-        <div class="special__img02 special__imgStyle">
-          <img src="./assets/images/features_img02.jpg" alt="">
-        </div>
-        <div class="special__img03 special__imgStyle">
-          <img src="./assets/images/features_img03.jpg" alt="">
-        </div>
-      </div>
-      <div class="specialCnt w-100 text-white py-8 pt-9 pt-md-8">
+    <section>
+      <div class="body-bg py-7">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-5"></div>
-            <div class="col-12 col-md-7 col-lg-5 m-auto">
-              <h2 class="h2 mb-5">電商特色</h2>
-              <div class="d-flex flex-wrap">
-                <ul class="w-50">
-                    <li class="mb-4">ＲＷＤ版面設計</li>
-                    <li class="mb-4">金流及物流</li>
-                    <li class="mb-4">SSL安全性憑證</li>
-                    <li class="mb-4">完善訂單與購物車系統</li>
-                    <li class="mb-4">SEO搜尋引擎優化</li>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="featuresImg">
+                <div class="scaleUp__animation bg-secondary" data-aos="scale-up" data-aos-delay="200"></div>
+                <img class="featuresImg__img rounded-lg" src="./assets/images/features_img.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-lg-7 text-white">
+              <h3 class="h3 mb-5 mb-lg-6" data-aos="fade-sm-up" data-aos-delay="500">我們的服務只專注於創建領先行業的網站，<span class="d-inline d-lg-block">以下是我們電商功能的簡短列表。</span></h3>
+              <div class="featuresText">
+                <ul class="featuresText__list" data-aos="fade-sm-up" data-aos-delay="600">
+                  <li>ＲＷＤ版面設計</li>
+                  <li>金流及物流</li>
+                  <li>SSL安全性憑證</li>
+                  <li>完善訂單與購物車系統</li>
                 </ul>
-                <ul class="w-50">
-                  <li class="mb-4">訂單0抽成</li>
-                  <li class="mb-4">高安全WFA防護主機</li>
-                  <li class="mb-4">支援多國語系切換</li>
-                  <li class="mb-4">多種行銷優惠功能</li>
-                  <li class="mb-4">部落格內容行銷</li>
+                <ul class="featuresText__list" data-aos="fade-sm-up" data-aos-delay="700">
+                  <li>SEO搜尋引擎優化</li>
+                  <li>訂單0抽成</li>
+                  <li>高安全WFA防護主機</li>
+                  <li>支援多國語系切換</li>
                 </ul>
-                <ul class="w-100">
-                  <li>運用部落格功能來強大行銷，累積文章與作品吸引淺在客戶。</li>
+                <ul class="featuresText__list" data-aos="fade-sm-up" data-aos-delay="800">
+                  <li>多種行銷優惠功能</li>
+                  <li>部落格內容行銷</li>
+                  <li>部落格功能的強大行銷</li>
                 </ul>
               </div>
             </div>
@@ -292,7 +311,7 @@
       </div>
     </section>
 
-    <section id="CustomerCase" class="overflow-hidden mb-7 mb-md-8">
+    <section id="CustomerCase" class="overflow-hidden my-7 my-md-8">
       <div class="container">
         <div class="text-center mb-6 mb-md-7">
           <h2 class="h2 mb-4">我們積累經驗培養有意義的品牌和客戶。</h2>
@@ -329,7 +348,7 @@
               <div class="row">
                 <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -340,7 +359,7 @@
                 </article>
                 <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -351,7 +370,7 @@
                 </article>
                 <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -362,7 +381,7 @@
                 </article>
                 <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -373,7 +392,7 @@
                 </article>
                 <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -384,7 +403,7 @@
                 </article>
                 <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -395,7 +414,7 @@
                 </article>
                 <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -406,7 +425,7 @@
                 </article>
                 <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -418,10 +437,10 @@
               </div>
             </div>
             <div class="tab-pane fade" id="tab__eSystemCnt" role="tabpanel" aria-labelledby="tab__eSystemLink">
-              <div class="row mb-4">
-                <article class="worksProject col-12 col-lg-3">
+              <div class="row">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -430,9 +449,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -441,9 +460,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -452,9 +471,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -463,9 +482,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -474,9 +493,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -485,9 +504,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -496,9 +515,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -510,10 +529,10 @@
               </div>
             </div>
             <div class="tab-pane fade" id="tab__onepageCnt" role="tabpanel" aria-labelledby="tab__onepageLink">
-              <div class="row mb-4">
-                <article class="worksProject col-12 col-lg-3">
+              <div class="row">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -522,9 +541,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -533,9 +552,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -544,9 +563,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -555,9 +574,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -566,9 +585,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -577,9 +596,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -588,9 +607,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -602,10 +621,10 @@
               </div>
             </div>
             <div class="tab-pane fade" id="tab__partnerCnt" role="tabpanel" aria-labelledby="tab__partnerLink">
-              <div class="row mb-4">
-                <article class="worksProject col-12 col-lg-3">
+              <div class="row">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -614,9 +633,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -625,9 +644,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -636,9 +655,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -647,9 +666,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -658,9 +677,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -669,9 +688,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -680,9 +699,9 @@
                   </div>
                   <p class="works__imgBlock__name">企業形象網站</p>
                 </article>
-                <article class="worksProject col-12 col-lg-3">
+                <article class="worksProject col-6 col-md-4 col-lg-3">
                   <div class="worksProject__imgBlock card__4-to-3 mb-2">
-                    <img src="./assets/images/works_img.jpg" alt="">
+                    <img class="card__4-to-3__cnt" src="./assets/images/works_img.jpg" alt="">
                     <div class="worksProject__imgBlock--hover">
                       <span>造訪網站</span>
                       <span class="material-icons ml-2">open_in_new</span>
@@ -700,18 +719,18 @@
     
     <section id="ProjectCost" class="bg-light overflow-hidden py-7 py-md-8">
       <div class="container">
-        <div class="text-center mb-6 mb-md-7">
+        <div class="text-center mb-4 mb-lg-7">
           <h2 class="h2 mb-4">選擇最適合自己的方案</h2>
           <div class="text-center">
             <a href="#">知道更多詳細內容</a>
           </div>
         </div>
         <div class="swiper-container pt-8  pt-md-5">
-          <div class="swiper-scrollbar"></div>
+          <div class="swiper-pagination"></div>
           <div class="swiper-wrapper d-flex align-items-stretch">
-            <div class="swiper-slide bg-white rounded-lg shadow box-scale-normal box-scale--hover animation">
+            <div class="swiper-slide priceSlide border rounded-lg shadow animation">
               <div class="priceBlock">
-                <div class="text-center p-6">
+                <div class="text-center p-4 p-lg-6">
                   <h3 class="h3 mb-2">輕量型</h3>
                   <p class="mb-4">推薦預算有限小資族使用</p>
                   <div class="border-top border-bottom py-4 mb-5">
@@ -731,12 +750,12 @@
                 </div>              
               </div>
             </div>
-            <div class="swiper-slide bg-white rounded-lg shadow z-index-1 box-scale-lg">
+            <div class="swiper-slide priceSlide border border-secondary rounded-lg shadow animation">
               <div class="priceBlock">
                 <div class="priceBlock__popular">
                   <p class="text-white text-center m-0">最受歡迎</p>
                 </div>
-                <div class="text-center p-6">
+                <div class="text-center p-4 p-lg-6">
                   <h3 class="h3 mb-2">高階型</h3>
                   <p class="mb-4">推薦企業使用</p>
                   <div class="border-top border-bottom py-4 mb-5">
@@ -758,9 +777,9 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide bg-white rounded-lg shadow box-scale-normal box-scale--hover animation">
+            <div class="swiper-slide priceSlide border rounded-lg shadow animation">
               <div class="priceBlock">
-                <div class="text-center p-6">
+                <div class="text-center p-4 p-lg-6">
                   <h3 class="h3 mb-2">客製型</h3>
                   <p class="mb-4">推薦有各種客製功能需求使用</p>
                   <div class="border-top border-bottom py-4 mb-5">
@@ -808,15 +827,15 @@
       </svg>
       <div class="bg-secondary py-9">
         <div class="container">
-          <h2 class="h2 text-center text-white line-height-lg m-0">與使用 MINIWORK 的數萬人一起，<span class="d-inline d-md-block">製作您最喜歡的網站。</span></h2>
+          <h2 class="h2 text-center text-white line-height-lg m-0" data-aos="fade-sm-up">與使用 MINIWORK 的數萬人一起，<span class="d-inline d-md-block">製作您最喜歡的網站。</span></h2>
         </div>
       </div>
     </section>
 
     <!-- Go top botton -->
-    <button type="button" onclick="topFunction()" id="gotopBtn" class="gotopBtn" title="Go to top" data-aos="fade-up">
+    <!-- <button type="button" onclick="topFunction()" id="gotopBtn" class="gotopBtn" title="Go to top" data-aos="fade-sm-up">
       <span class="material-icons">arrow_upward</span>
-    </button>
+    </button> -->
   </main>
   
   <footer class="bg-secondary text-white pt-7 pb-4 pb-md-6">
@@ -867,11 +886,11 @@
               <a class="" href="#">免費試用</a>
             </li>
           </ul>
-          <div class="input-group mb-1">
-            <input type="text" class="flex-fill border-0 rounded px-3 py-2 mr-2" placeholder="請留下您的電話或 Email">
-            <button class="btn border text-white px-4 py-2" type="button" id="button-addon2">請聯絡我</button>
+          <div class="input-group mb-2 mb-sm-1">
+            <input type="text" class="flex-fill border-0 rounded px-3 py-2 mr-0 mr-sm-2 mb-2 mb-sm-0" placeholder="請留下您的電話或 Email">
+            <button class="btn border text-white px-4 py-2 m-auto m-sm-0" type="button" id="button-addon2">請聯絡我</button>
           </div>
-          <p class="text-size-sm m-0">若需要我們與您聯絡，請留下電話或 Email</p>
+          <p class="text-size-sm text-center text-sm-left m-0">若需要我們與您聯絡，請留下電話或 Email</p>
         </div>
       </div>
       <div class="row text-size-sm">
@@ -903,6 +922,16 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- My JS -->
   <script src="./assets/js/all.js"></script>
+  <!-- AOS -->
+  <script>
+    AOS.init({
+      duration: 600,
+      disable: function() {
+        var maxWidth = 768;
+        return window.innerWidth < maxWidth;
+      }
+    });
+  </script>
 
 </body>
 

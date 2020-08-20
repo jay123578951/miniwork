@@ -1,22 +1,26 @@
-// 正方體
-.cubeCard {
+// 1:1
+.card__1-to-1 {
   position: relative;
   width: 100%;
   padding-top: calc(100% * 1);
   overflow: hidden;
-  .cubeCard__cnt {
+  .card__1-to-1__cnt {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
+// 4:3
 .card__4-to-3 {
   position: relative;
   width: 100%;
   padding-top: calc(100% * 0.75);
   overflow: hidden;
-  img {
+  .card__4-to-3__cnt {
     position: absolute;
     top: 0;
     left: 0;

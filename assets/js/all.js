@@ -5,46 +5,39 @@ var swiper = new Swiper('.swiper-container', {
   initialSlide : 1,
   grabCursor : true,
   breakpoints: {
-    576: {
-      slidesPerView: 2,
-      initialSlide : 0,
-    },
-    1024: {
+    768: {
       slidesPerView: 3,
-      initialSlide : 1,
+      grabCursor : false,
     },
   },
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  pagination: {
+    el: '.swiper-pagination',
   },
 });
 
 // Loading
-var $loading = $('#loading');
-var $progress = $('#progress');
-window.onload = () => {
-  $loading.hide();
-};
-
-// AOS
-AOS.init({
-  duration: 500,
-});
+// var $loading = $('#loading');
+// var $progress = $('#progress');
+// window.onload = () => {
+//   // setTimeout(() => {
+//   //   $loading.hide();
+//   // },5200);
+// };
 
 //Go oop button:
-mybutton = document.getElementById("gotopBtn");
+// mybutton = document.getElementById("gotopBtn");
 
-window.onscroll = function() {
-  scrollFunction()
-};
+// window.onscroll = function() {
+//   scrollFunction()
+// };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.opacity = "1";
-  } else {
-    mybutton.style.opacity = "0";
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.opacity = "1";
+//   } else {
+//     mybutton.style.opacity = "0";
+//   }
+// }
 
 // Add shadow of navbar
 function topFunction() {
