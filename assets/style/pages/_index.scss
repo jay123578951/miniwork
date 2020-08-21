@@ -1,61 +1,3 @@
-.loading {
-  animation: loading 0.2s ease-in;
-  animation-delay: 2.3s;
-  animation-fill-mode: forwards;
-}
-.openLoading__cnt {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 6px;
-  overflow: hidden;
-  animation: textDisappear 0.5s linear;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-}
-.water-fill {
-  animation: loadingWave 0.7s infinite linear, 
-             fill-up 1.5s ease-out alternate;
-}
-@keyframes loadingWave {
-  0% {
-    x: -350px;
-  }
-  100% {
-    x: -50px;
-  }
-}
-@keyframes fill-up {
-  0% {
-    height: 0;
-    y: 130px;
-  }
-  100% {
-    height: 150px;
-    y: -30px;
-  }
-}
-@keyframes loading {
-  0% {
-    height: 100%;
-  }
-  100% {
-    height: 0;
-    top: -25px;
-  }
-}
-@keyframes textDisappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-  }
-}
-
-
 // Banner
 .banner {
   position: relative;
@@ -327,6 +269,7 @@
     transform: translate3d(0,0,0);
   }
 }
+// LineRobot
 .lineRobot {
   position: relative;
   background: #4CAF50;
@@ -362,6 +305,7 @@
     }
   }
 }
+// Alliance
 .alliance {
   position: relative;
   background: #8E99F3;
@@ -433,7 +377,8 @@
     }
   }
 }
-.MultiModule {
+// MultiModule
+.multiModule {
   position: relative;
   background: url("../assets/images/present_05_bg.jpg") center no-repeat;;
   width: 100%;
@@ -443,7 +388,7 @@
   cursor: pointer;
   &:hover {
     background-size: cover;
-    .MultiModule__word {
+    .multiModule__word {
       transform: scale(2);
     }
   }
@@ -451,12 +396,12 @@
     background-size: 100%;
     &:hover {
       background-size: 110%;
-      .MultiModule__word {
+      .multiModule__word {
         transform: scale(1.2);
       }      
     }
   }
-  .MultiModule__word {
+  .multiModule__word {
     position: absolute;
     bottom: -20%;
     left: 0;
@@ -466,6 +411,7 @@
     }
   }
 }
+// Onepage
 .onepage {
   position: relative;
   width: 100%;
@@ -520,6 +466,7 @@
     }
   }
 }
+// AnalysisReport
 .analysisReport {
   position: relative;
   background: #E8E8EA;
@@ -578,7 +525,7 @@
   }
 }
 
-// Special
+// Features
 .featuresImg {
   position: relative;
   width: 100%;

@@ -4,46 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>miniwork</title>
-  <!-- MATERIAL DESIGN ICON-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!-- Swiper CSS CDN -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!-- AOS CSS CDN -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-  <!-- My CSS -->
   <link rel="stylesheet" href="./css/all.css">
 </head>
 
 <body id="body">
-  <!-- Loading -->
-  <div class="loading bg-secondary" id="loading">
-    <div class="progress" id="progress">
-      <div class="spinner-grow text-primary" role="status">
-        <div class="openLoading__cnt">
-          <svg class="loading__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="100%" viewBox="0 0 574.558 120" enable-background="new 0 0 574.558 120" xml:space="preserve">
-            <defs>
-              <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
-                <path fill="#fff" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
-              </pattern>
-              
-              <text id="text" transform="matrix(1 0 0 1 -8.0684 116.7852)" font-size="161.047">miniwork</text>
-              
-              <mask id="text_mask">
-                <use x="0" y="0" xlink:href="#text" opacity="1" fill="#3498db"/>
-              </mask>
-            </defs>
-            
-            <use x="0" y="0" xlink:href="#text" fill="#3498db"/>
-            
-            <rect class="water-fill" mask="url(#text_mask)" fill="url(#water)" x="-400" y="0" width="1600" height="120"/>
-          </svg>
-        </div>
-      </div>
+
+  <div class="openLoading pageGoTop--animation bg-secondary">
+    <div class="openLoading__cnt textDisappear--animation">
+      <svg class="openLoading__cnt__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="100%" viewBox="0 0 574.558 120" enable-background="new 0 0 574.558 120" xml:space="preserve">
+        <defs>
+          <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+            <path fill="#fff" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+          </pattern>
+          <text id="text" transform="matrix(1 0 0 1 -8.0684 116.7852)" font-size="161.047">miniwork</text>
+          <mask id="text_mask">
+            <use x="0" y="0" xlink:href="#text" opacity="1" fill="#3498db"/>
+          </mask>
+        </defs>
+        <use x="0" y="0" xlink:href="#text" fill="#3498db"/>
+        <rect class="openLoading__waterFill" mask="url(#text_mask)" fill="url(#water)" x="-400" y="0" width="1600" height="120"/>
+      </svg>
     </div>
   </div>
+
   <header>
     <nav id="headerNav" class="headerNav navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">MINIWORK</a>
@@ -77,9 +64,9 @@
       <div class="banner__main container">
         <div class="banner__main__text mb-5 mb-md-7">
           <h2 class="fadeUp__animation h2 font-weight-normal mb-2">MINIWORK</h2>
-          <h1 class="fadeUp__animation fadeUp__delay__3-7 h1 text-secondary font-weight-bold ml-0 ml-md-3 mb-2"><span class="textBottomlLine">開店</span>平台，<span class="textBottomlLine">簡單</span>又強大！</h1>
-          <h4 class="fadeUp__animation fadeUp__delay__3-9 h4 font-weight-normal line-height-lg mb-4 mb-md-5">完善的電商功能 + 訂單 0 抽成，<span class="d-block d-md-inline">讓你輕鬆管理網店無負擔。</span></h4>
-          <button type="button" class="fadeUp__animation fadeUp__delay__4-1 btnMain btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          <h1 class="fadeUp__animation fadeUp__delay__3-3 h1 text-secondary font-weight-bold ml-0 ml-md-3 mb-2"><span class="textBottomlLine">開店</span>平台，<span class="textBottomlLine">簡單</span>又強大！</h1>
+          <h4 class="fadeUp__animation fadeUp__delay__3-4 h4 font-weight-normal line-height-lg mb-4 mb-md-5">完善的電商功能 + 訂單 0 抽成，<span class="d-block d-md-inline">讓你輕鬆管理網店無負擔。</span></h4>
+          <button type="button" class="fadeUp__animation fadeUp__delay__3-5 btnMain btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
             立即開店
           </button>
         </div>
@@ -175,10 +162,10 @@
     <section class="position-relative overflow-hidden py-7 py-md-9">
       <div class="container">
         <h2 class="h2 text-center mb-6 mb-md-7">多種功能滿足不同網路開店需求</h2>
-        <div class="row flex-row-reverse align-items-center mb-6 mb-md-7">
+        <div id="LineRobot" class="row flex-row-reverse align-items-center mb-6 mb-md-7">
           <div class="col-12 col-lg-7 pb-4 pb-lg-0">
             <div class="lineRobot rounded-lg">
-              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200" data-aos-anchor="#LineRobot"></div>
               <div class="lineRobot__hand animation">
                 <img src="./assets/images/present_03_hand.svg" alt="">
               </div>
@@ -188,14 +175,14 @@
             </div>
           </div>
           <div class="col-12 col-lg-4 m-auto">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">LINE 機器人行銷</h3>
-            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">關鍵字設定、機器人自動回覆、一站下單、商品推播... 與電商完美結合，透過對話輕鬆完成銷售。</p>
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400" data-aos-anchor="#LineRobot">LINE 機器人行銷</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500" data-aos-anchor="#LineRobot">關鍵字設定、機器人自動回覆、一站下單、商品推播... 與電商完美結合，透過對話輕鬆完成銷售。</p>
           </div>
         </div>
-        <div class="row align-items-center mb-6 mb-md-7">
+        <div id="Alliance" class="row align-items-center mb-6 mb-md-7">
           <div class="col-12 col-lg-7 pb-4 pb-lg-0">
             <div class="alliance rounded-lg">
-              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200" data-aos-anchor="#Alliance"></div>
               <div class="alliance__phone">
                 <img class="animation" src="./assets/images/present_04_phone.svg" alt="">
               </div>
@@ -213,28 +200,28 @@
             </div>
           </div>
           <div class="col-12 col-lg-4 m-auto">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">聯盟行銷機制</h3>
-            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">可輕鬆設定分潤機制並統計行銷數據，讓網紅、部落客輕鬆與你洽談合作推薦導購商品。 </p>
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400" data-aos-anchor="#Alliance">聯盟行銷機制</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500" data-aos-anchor="#Alliance">可輕鬆設定分潤機制並統計行銷數據，讓網紅、部落客輕鬆與你洽談合作推薦導購商品。 </p>
           </div>
         </div>
-        <div class="row flex-row-reverse align-items-center mb-6 mb-md-7">
+        <div id="MultiModule" class="row flex-row-reverse align-items-center mb-6 mb-md-7">
           <div class="col-12 col-lg-7 pb-4 pb-lg-0">
-            <div class="MultiModule rounded-lg animation">
-              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
-              <div class="MultiModule__word animation">
+            <div class="multiModule rounded-lg animation">
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200" data-aos-anchor="#MultiModule"></div>
+              <div class="multiModule__word animation">
                 <img class="rounded-lg" src="./assets/images/present_05_word.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 m-auto" data-aos="fade-sm-up" data-aos-delay="50">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">多元行銷模組</h3>
-            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">靈活多元的行銷工具，折扣碼、優惠卷、紅利點數、滿額折扣...</p>
+          <div class="col-12 col-lg-4 m-auto">
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400" data-aos-anchor="#MultiModule">多元行銷模組</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500" data-aos-anchor="#MultiModule">靈活多元的行銷工具，折扣碼、優惠卷、紅利點數、滿額折扣...</p>
           </div>
         </div>
-        <div class="row align-items-center mb-6 mb-md-7">
-          <div class="col-12 col-lg-7 pb-4 pb-lg-0" data-aos="fade-sm-up">
+        <div id="Onepage" class="row align-items-center mb-6 mb-md-7">
+          <div class="col-12 col-lg-7 pb-4 pb-lg-0">
             <div class="onepage rounded-lg animation">
-              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200" data-aos-anchor="#Onepage"></div>
               <div class="onepage__bg02 animation">
                 <img src="./assets/images/present_06_web_bg.svg" alt="">
               </div>
@@ -247,22 +234,22 @@
             </div>
           </div>
           <div class="col-12 col-lg-4 m-auto">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">一頁式購物</h3>
-            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">商品頁面可設定為一頁式購物功能，搭配社群或廣告行銷提升成交率！</p>
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400" data-aos-anchor="#Onepage">一頁式購物</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500" data-aos-anchor="#Onepage">商品頁面可設定為一頁式購物功能，搭配社群或廣告行銷提升成交率！</p>
           </div>
         </div>
-        <div class="row flex-row-reverse align-items-center">
+        <div id="AnalysisReport" class="row flex-row-reverse align-items-center">
           <div class="col-12 col-lg-7 pb-4 pb-lg-0" data-aos="fade-sm-up">
             <div class="analysisReport rounded-lg animation">
-              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200"></div>
+              <div class="scaleUp__animation" data-aos="scale-up" data-aos-delay="200" data-aos-anchor="#AnalysisReport"></div>
               <div class="analysisReport__notebook animation">
                 <img src="./assets/images/present_07_notebook.svg" alt="">
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-4 m-auto">
-            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400">營運分析報表</h3>
-            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500">即時顯示商品訂單狀態、銷售統計，營運分析報表數據一目瞭然，快速掌握營運現況提升業績。</p>
+            <h3 class="h3 mt-0 mb-3 mt-md-4 mb-md-3" data-aos="fade-sm-up" data-aos-delay="400" data-aos-anchor="#AnalysisReport">營運分析報表</h3>
+            <p class="text-info m-0" data-aos="fade-sm-up" data-aos-delay="500" data-aos-anchor="#AnalysisReport">即時顯示商品訂單狀態、銷售統計，營運分析報表數據一目瞭然，快速掌握營運現況提升業績。</p>
           </div>
         </div>
       </div>
@@ -785,7 +772,7 @@
                   <div class="border-top border-bottom py-4 mb-5">
                     <h2 class="h2 mb-1">$ 50,000<sub class="text-size-normal">起</sub></h2>
                     <p class="mb-4">首年繳</p>
-                    <button type="button" class="btnMain btn btn-primary">免費試用</button>
+                    <button type="button" class="btnMain btn btn-primary">聯絡我們</button>
                   </div>
                   <ul>
                     <li class="mb-2">電商系統＋形象官網</li>
@@ -832,10 +819,6 @@
       </div>
     </section>
 
-    <!-- Go top botton -->
-    <!-- <button type="button" onclick="topFunction()" id="gotopBtn" class="gotopBtn" title="Go to top" data-aos="fade-sm-up">
-      <span class="material-icons">arrow_upward</span>
-    </button> -->
   </main>
   
   <footer class="bg-secondary text-white pt-7 pb-4 pb-md-6">
@@ -912,17 +895,13 @@
     </div>
   </footer>
 
-  <!-- Swiper JS CDN -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- Bootstrap JS CDN-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <!-- AOS JS CDN -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- My JS -->
   <script src="./assets/js/all.js"></script>
-  <!-- AOS -->
+
   <script>
     AOS.init({
       duration: 600,

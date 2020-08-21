@@ -1,5 +1,17 @@
-.loading {
-  display: table;
+$pageGoTop--duration: 0.4s;
+$pageGoTop--delay: 2.3s;
+
+$textDisappear--duration: 0.5s;
+$textDisappear--delay: 1.5s;
+
+$loadingWave--duration: 0.7s;
+
+$fill-up--duration: 1.5s;
+
+.openLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,17 +20,75 @@
   background-color: #fff;
   z-index: 1031;
 }
-.loading .progress {
+.openLoading.progress {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.loading__svg {
+.openLoading__cnt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 6px;
+  overflow: hidden;
+}
+.openLoading__cnt__svg {
   max-height: 50px;
   use {
     position: relative;
     transform: translateX(-5%);
+  }
+}
+.pageGoTop--animation {
+  animation: pageGoTop $pageGoTop--duration ease-in;
+  animation-delay: $pageGoTop--delay;
+  animation-fill-mode: forwards;
+}
+.textDisappear--animation {
+  animation: textDisappear $textDisappear--duration linear;
+  animation-delay: $textDisappear--delay;
+  animation-fill-mode: forwards;
+}
+.openLoading__waterFill {
+  animation: loadingWave $loadingWave--duration infinite linear, 
+             fill-up $fill-up--duration ease-out alternate;
+}
+@keyframes pageGoTop {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+    top: -25px;
+  }
+}
+@keyframes textDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes loadingWave {
+  0% {
+    x: -350px;
+  }
+  100% {
+    x: -50px;
+  }
+}
+@keyframes fill-up {
+  0% {
+    height: 0;
+    y: 130px;
+  }
+  100% {
+    height: 150px;
+    y: -30px;
   }
 }

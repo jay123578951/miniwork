@@ -8828,17 +8828,17 @@ ol {
           animation-fill-mode: forwards;
 }
 
-.fadeUp__delay__3-7 {
+.fadeUp__delay__3-3 {
   -webkit-animation-delay: 3.3s !important;
           animation-delay: 3.3s !important;
 }
 
-.fadeUp__delay__3-9 {
+.fadeUp__delay__3-4 {
   -webkit-animation-delay: 3.4s !important;
           animation-delay: 3.4s !important;
 }
 
-.fadeUp__delay__4-1 {
+.fadeUp__delay__3-5 {
   -webkit-animation-delay: 3.5s !important;
           animation-delay: 3.5s !important;
 }
@@ -9016,8 +9016,16 @@ ol {
   }
 }
 
-.loading {
-  display: table;
+.openLoading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -9027,7 +9035,7 @@ ol {
   z-index: 1031;
 }
 
-.loading .progress {
+.openLoading.progress {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -9041,14 +9049,132 @@ ol {
           align-items: center;
 }
 
-.loading__svg {
+.openLoading__cnt {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 6px;
+  overflow: hidden;
+}
+
+.openLoading__cnt__svg {
   max-height: 50px;
 }
 
-.loading__svg use {
+.openLoading__cnt__svg use {
   position: relative;
   -webkit-transform: translateX(-5%);
           transform: translateX(-5%);
+}
+
+.pageGoTop--animation {
+  -webkit-animation: pageGoTop 0.4s ease-in;
+          animation: pageGoTop 0.4s ease-in;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.textDisappear--animation {
+  -webkit-animation: textDisappear 0.5s linear;
+          animation: textDisappear 0.5s linear;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.openLoading__waterFill {
+  -webkit-animation: loadingWave 0.7s infinite linear, fill-up 1.5s ease-out alternate;
+          animation: loadingWave 0.7s infinite linear, fill-up 1.5s ease-out alternate;
+}
+
+@-webkit-keyframes pageGoTop {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+    top: -25px;
+  }
+}
+
+@keyframes pageGoTop {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+    top: -25px;
+  }
+}
+
+@-webkit-keyframes textDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes textDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@-webkit-keyframes loadingWave {
+  0% {
+    x: -350px;
+  }
+  100% {
+    x: -50px;
+  }
+}
+
+@keyframes loadingWave {
+  0% {
+    x: -350px;
+  }
+  100% {
+    x: -50px;
+  }
+}
+
+@-webkit-keyframes fill-up {
+  0% {
+    height: 0;
+    y: 130px;
+  }
+  100% {
+    height: 150px;
+    y: -30px;
+  }
+}
+
+@keyframes fill-up {
+  0% {
+    height: 0;
+    y: 130px;
+  }
+  100% {
+    height: 150px;
+    y: -30px;
+  }
 }
 
 .swiper-container {
@@ -9485,121 +9611,6 @@ ol {
 
 .footer__hearder {
   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
-}
-
-.loading {
-  -webkit-animation: loading 0.2s ease-in;
-          animation: loading 0.2s ease-in;
-  -webkit-animation-delay: 2.3s;
-          animation-delay: 2.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.openLoading__cnt {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 6px;
-  overflow: hidden;
-  -webkit-animation: textDisappear 0.5s linear;
-          animation: textDisappear 0.5s linear;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.water-fill {
-  -webkit-animation: loadingWave 0.7s infinite linear,  fill-up 1.5s ease-out alternate;
-          animation: loadingWave 0.7s infinite linear,  fill-up 1.5s ease-out alternate;
-}
-
-@-webkit-keyframes loadingWave {
-  0% {
-    x: -350px;
-  }
-  100% {
-    x: -50px;
-  }
-}
-
-@keyframes loadingWave {
-  0% {
-    x: -350px;
-  }
-  100% {
-    x: -50px;
-  }
-}
-
-@-webkit-keyframes fill-up {
-  0% {
-    height: 0;
-    y: 130px;
-  }
-  100% {
-    height: 150px;
-    y: -30px;
-  }
-}
-
-@keyframes fill-up {
-  0% {
-    height: 0;
-    y: 130px;
-  }
-  100% {
-    height: 150px;
-    y: -30px;
-  }
-}
-
-@-webkit-keyframes loading {
-  0% {
-    height: 100%;
-  }
-  100% {
-    height: 0;
-    top: -25px;
-  }
-}
-
-@keyframes loading {
-  0% {
-    height: 100%;
-  }
-  100% {
-    height: 0;
-    top: -25px;
-  }
-}
-
-@-webkit-keyframes textDisappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-  }
-}
-
-@keyframes textDisappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-  }
 }
 
 .banner {
@@ -10125,7 +10136,7 @@ ol {
   height: 100%;
 }
 
-.MultiModule {
+.multiModule {
   position: relative;
   background: url("../assets/images/present_05_bg.jpg") center no-repeat;
   width: 100%;
@@ -10135,29 +10146,29 @@ ol {
   cursor: pointer;
 }
 
-.MultiModule:hover {
+.multiModule:hover {
   background-size: cover;
 }
 
-.MultiModule:hover .MultiModule__word {
+.multiModule:hover .multiModule__word {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
 
 @media (min-width: 768px) {
-  .MultiModule {
+  .multiModule {
     background-size: 100%;
   }
-  .MultiModule:hover {
+  .multiModule:hover {
     background-size: 110%;
   }
-  .MultiModule:hover .MultiModule__word {
+  .multiModule:hover .multiModule__word {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
 }
 
-.MultiModule .MultiModule__word {
+.multiModule .multiModule__word {
   position: absolute;
   bottom: -20%;
   left: 0;
@@ -10166,7 +10177,7 @@ ol {
 }
 
 @media (min-width: 768px) {
-  .MultiModule .MultiModule__word {
+  .multiModule .multiModule__word {
     left: -5%;
   }
 }
