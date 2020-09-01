@@ -20,6 +20,11 @@
 
 .nav-link {
   padding: 1rem;
+  color: $body-color !important;
+  &:hover {
+    color: $info !important;
+    text-decoration: underline;
+  }
   @include largePad() {
     padding: 0.5rem 1rem;
   }

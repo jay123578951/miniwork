@@ -652,6 +652,9 @@
     }
   }
 }
+.priceBlock {
+  background: #fff;
+}
 .priceBlock__popular {
   position: absolute;
   top: 0;
@@ -662,4 +665,6 @@
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
   padding: 0.5rem 0;
+  text-align: center;
+  color: #fff;
 }

@@ -16,6 +16,27 @@ ol {
 .h-100vh {
   height: 100vh;
 }
+.w-33 {
+  width: 33.333% !important;
+}
+
+// Spacing
+.mt-40 {
+  margin-top: 40px;
+}
+@include mobile() {
+  .w-sm-auto {
+    width: auto !important;
+  }
+}
+@include largePad() {
+  .mt-lg-90 {
+    margin-top: 90px !important;
+  }
+  .pt-lg-40 {
+    padding-top: 40px !important;
+  }
+}
 
 // Text
 .h1 {
@@ -79,6 +100,17 @@ ol {
 .body-bg {
   background: $body-bg;
 }
+.text-gray-500 {
+  color: $gray-500;
+}
+
+// Border
+@include desktop-1200() {
+  .border-bottom-lg-0 {
+    border-bottom: none !important;
+  }
+}
+
 
 // Animation
 .animation {

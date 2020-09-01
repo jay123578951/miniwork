@@ -8730,6 +8730,29 @@ ol {
   height: 100vh;
 }
 
+.w-33 {
+  width: 33.333% !important;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+@media (min-width: 576px) {
+  .w-sm-auto {
+    width: auto !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .mt-lg-90 {
+    margin-top: 90px !important;
+  }
+  .pt-lg-40 {
+    padding-top: 40px !important;
+  }
+}
+
 .h1 {
   font-size: 2.625rem;
   line-height: 1.2;
@@ -8806,6 +8829,16 @@ ol {
 .body-bg {
   background: -webkit-gradient(linear, left bottom, left top, from(#04194B), color-stop(60%, #002F6C), to(#004C8C));
   background: linear-gradient(to top, #04194B, #002F6C 60%, #004C8C);
+}
+
+.text-gray-500 {
+  color: #adb5bd;
+}
+
+@media (min-width: 1200px) {
+  .border-bottom-lg-0 {
+    border-bottom: none !important;
+  }
 }
 
 .animation {
@@ -8962,10 +8995,16 @@ ol {
 .btnMain {
   color: #fff;
   background: #00B0FF;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: normal;
   padding: 0.5rem 2rem;
   letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+  .btnMain {
+    font-size: 1.5rem;
+  }
 }
 
 .card__1-to-1 {
@@ -9579,6 +9618,12 @@ ol {
 
 .nav-link {
   padding: 1rem;
+  color: #363636 !important;
+}
+
+.nav-link:hover {
+  color: rgba(54, 54, 54, 0.7) !important;
+  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
@@ -10501,6 +10546,10 @@ ol {
   }
 }
 
+.priceBlock {
+  background: #fff;
+}
+
 .priceBlock__popular {
   position: absolute;
   top: 0;
@@ -10512,4 +10561,11 @@ ol {
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
   padding: 0.5rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.priceBlock__popular--pagePrice {
+  left: 10%;
+  width: 80%;
 }
