@@ -7652,7 +7652,7 @@ fieldset:disabled a.btn {
 .btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.2;
   border-radius: 0.2rem;
 }
 
@@ -7780,7 +7780,7 @@ select.form-control:focus::-ms-value {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .form-control-plaintext {
@@ -7802,10 +7802,10 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-sm {
-  height: calc(1.5em + 0.5rem + 2px);
+  height: calc(1.2em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.2;
   border-radius: 0.2rem;
 }
 
@@ -8355,7 +8355,7 @@ textarea.form-control {
 
 .input-group-sm > .form-control:not(textarea),
 .input-group-sm > .custom-select {
-  height: calc(1.5em + 0.5rem + 2px);
+  height: calc(1.2em + 0.5rem + 2px);
 }
 
 .input-group-sm > .form-control,
@@ -8366,7 +8366,7 @@ textarea.form-control {
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.2;
   border-radius: 0.2rem;
 }
 
@@ -8726,12 +8726,18 @@ ol {
   padding-left: 1.25rem;
 }
 
-.h-100vh {
-  height: 100vh;
-}
-
 .w-33 {
   width: 33.333% !important;
+}
+
+.fullpage {
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .fullpage {
+    height: calc(100vh - 90px);
+  }
 }
 
 .mt-40 {
@@ -8745,7 +8751,7 @@ ol {
 }
 
 @media (min-width: 992px) {
-  .mt-lg-90 {
+  .mt-lg-nav {
     margin-top: 90px !important;
   }
   .pt-lg-40 {
@@ -8809,6 +8815,10 @@ ol {
 
 .line-height-lg {
   line-height: 1.5 !important;
+}
+
+.line-height-sm {
+  line-height: 1.2 !important;
 }
 
 .textBottomlLine {
@@ -10568,4 +10578,24 @@ ol {
 .priceBlock__popular--pagePrice {
   left: 10%;
   width: 80%;
+}
+
+@media (min-width: 992px) {
+  .conatactTitle {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.conatactImg {
+  position: relative;
+  bottom: -40px;
+  left: 15px;
+}
+
+@media (min-width: 992px) {
+  .conatactImg {
+    position: absolute;
+    left: 0;
+  }
 }

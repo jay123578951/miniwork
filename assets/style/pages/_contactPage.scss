@@ -1,0 +1,15 @@
+.conatactTitle {
+  @include largePad() {
+    transform: translateY(-50%);
+  }
+}
+
+.conatactImg {
+  position: relative;
+  bottom: -40px;
+  left: 15px;
+  @include largePad() {
+    position: absolute;
+    left: 0;
+  }
+}

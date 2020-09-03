@@ -13,11 +13,14 @@ ol {
 }
 
 // Size
-.h-100vh {
-  height: 100vh;
-}
 .w-33 {
   width: 33.333% !important;
+}
+.fullpage {
+  height: 100%;
+  @include largePad() {
+    height: calc(100vh - 90px);
+  }
 }
 
 // Spacing
@@ -30,7 +33,7 @@ ol {
   }
 }
 @include largePad() {
-  .mt-lg-90 {
+  .mt-lg-nav {
     margin-top: 90px !important;
   }
   .pt-lg-40 {
@@ -79,6 +82,9 @@ ol {
 // Line height
 .line-height-lg {
   line-height: 1.5 !important;
+}
+.line-height-sm {
+  line-height: 1.2 !important;
 }
 
 // Text style
