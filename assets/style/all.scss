@@ -13,6 +13,7 @@
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/pagination";
 
 // My SCSS
 @import "helpers/mixin";
@@ -21,6 +22,7 @@
 @import "components/button";
 @import "components/card";
 @import "components/loading";
+@import "components/modal";
 @import "components/swiper";
 @import "components/_tabs";
 @import "components/wave";
@@ -29,5 +31,7 @@
 @import "layout/footer";
 
 @import "pages/index";
-@import "pages/pricePage";
-@import "pages/contactPage";
+@import "pages/plans";
+@import "pages/contact";
+@import "pages/signup";
+@import "pages/blog";

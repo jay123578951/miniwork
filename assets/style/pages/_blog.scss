@@ -1,0 +1,44 @@
+.blog__sort {
+  min-width: 100%;
+  overflow-x: scroll;
+  @include largePad() {
+    overflow-x: hidden;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  li {
+    min-width: fit-content;
+  }
+}
+
+
+.blogCnt {
+  display: none;
+}
+
+// .blogCnt--show {
+//   display: block;
+// }
+
+// .gallery {
+//   width: 330px;
+//   margin: 0;
+//   padding: 0;
+// }
+// .gallery li { 
+//   display: none;
+// }
+// .more, .less {
+//   background-color: #000;
+//   clear: both;
+//   color: #fff;
+//   cursor: pointer;
+//   display: block;
+//   font-size: 14px;
+//   margin-top: 6px;
+//   padding: 6px 0;
+//   text-align: center;
+// 	text-transform: uppercase;
+//   width: 320px;
+// }

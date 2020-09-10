@@ -57,13 +57,25 @@ $(document).ready(function () {
   });
 });
 
-// Works tabs
-$("#works__tabs #works__nav-tabs a").click(function() {
-  var position = $(this).parent().position();
-  var width = $(this).parent().width();
-  $("#works__tabs .slider").css({"left":+ position.left,"width":width});
+// blog loadMore
+$(document).ready(function () {
+  $('.blogCnt:lt(3)').show();
+  $('.less').hide();
+  var items =  9;
+  var shown =  3;
+  $('#loadMore').click(function () {
+      $('.less').show();
+      shown = $('.blogCnt:visible').length+3;
+      if(shown< items) {
+        $('.blogCnt:lt('+shown+')').show();
+      } else {
+        $('.blogCnt:lt('+items+')').show();
+        $('#loadMore').hide();
+      }
+  });
+  $('.less').click(function () {
+      $('.blogCnt').not(':lt(3)').hide();
+      $('#loadMore').show();
+      $('.less').hide();
+  });
 });
-var actWidth = $("#works__tabs #works__nav-tabs").find(".active").parent("li").width();
-var actPosition = $("#works__tabs #works__nav-tabs .active").position();
-$("#works__tabs .slider").css({"left":+ actPosition.left,"width": actWidth});
-

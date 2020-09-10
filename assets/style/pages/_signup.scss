@@ -1,0 +1,9 @@
+.signupImg {
+  position: relative;
+  bottom: -20px;
+  left: 15px;
+  @include largePad() {
+    position: absolute;
+    left: 0;
+  }
+}

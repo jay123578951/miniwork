@@ -16,9 +16,20 @@ ol {
 .w-33 {
   width: 33.333% !important;
 }
+@include pad() {
+  .w-md-50 {
+    width: 50% !important;
+  }
+}
+@include largePad() {
+  .w-lg-100 {
+    width: 100% !important;
+  }
+}
 .fullpage {
   height: 100%;
   @include largePad() {
+    width: 100%;
     height: calc(100vh - 90px);
   }
 }
@@ -42,34 +53,39 @@ ol {
 }
 
 // Text
+.h1,.h2,.h3,.h4,.h5 {
+  line-height: 1.2;
+  margin-bottom: 0;
+}
 .h1 {
   font-size: $h2-font-size;
-  line-height: 1.2;
   letter-spacing: 0.25rem;
-  margin-bottom: 0;
   @include desktop-1200() {
     font-size: $h1-font-size;
   }
 }
 .h2 {
   font-size: 2rem; // $h3-font-size;
-  margin-bottom: 0;
   @include desktop-1200() {
     font-size: $h2-font-size;
   }  
 }
 .h3 {
   font-size: $h4-font-size;
-  margin-bottom: 0;
   @include desktop-1200() {
     font-size: $h3-font-size;
   }  
 }
 .h4 {
   font-size: $font-size-base;
-  margin-bottom: 0;
   @include desktop-1200() {
     font-size: 1.25rem;
+  }
+}
+.h5 {
+  font-size: $font-size-base;
+  @include desktop-1200() {
+    font-size: $h5-font-size;
   }
 }
 .text-size-sm {
@@ -111,6 +127,11 @@ ol {
 }
 
 // Border
+@include largePad() {
+  .border-lg-0 {
+    border: none !important;
+  }
+}
 @include desktop-1200() {
   .border-bottom-lg-0 {
     border-bottom: none !important;

@@ -247,7 +247,7 @@ $border-radius-sm:            .2rem !default;
 
 $rounded-pill:                50rem !default;
 
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-sm:               0px 0px .875rem 1px rgba(94,98,119,0.1); // 0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow:                  0px 0px 1.5625rem 1px rgba(94,98,119,0.2); // 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%); // 0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
@@ -298,9 +298,9 @@ $line-height-base:            1.5 !default;
 
 $h1-font-size:                $font-size-base * 3.875; // $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2.625; // $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h3-font-size:                $font-size-base * 1.75 !default; // 28px
+$h4-font-size:                $font-size-base * 1.5 !default;  // 24px
+$h5-font-size:                $font-size-base * 1.25 !default; // 20px
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
@@ -974,7 +974,7 @@ $modal-lg:                          800px !default;
 $modal-md:                          500px !default;
 $modal-sm:                          300px !default;
 
-$modal-fade-transform:              translate(0, -50px) !default;
+$modal-fade-transform:              scale(.8); // translate(0, -50px) !default;
 $modal-show-transform:              none !default;
 $modal-transition:                  transform .3s ease-out !default;
 $modal-scale-transform:             scale(1.02) !default;
