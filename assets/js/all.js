@@ -59,23 +59,17 @@ $(document).ready(function () {
 
 // blog loadMore
 $(document).ready(function () {
-  $('.blogCnt:lt(3)').show();
-  $('.less').hide();
-  var items =  9;
+  $('.blogCnt:lt(3)').fadeIn();
+  var items =  $(".blogCnt").length;;
   var shown =  3;
+  console.log(items);
   $('#loadMore').click(function () {
-      $('.less').show();
-      shown = $('.blogCnt:visible').length+3;
-      if(shown< items) {
-        $('.blogCnt:lt('+shown+')').show();
+      shown = $('.blogCnt:visible').length + 3;
+      if(shown < items) {
+        $('.blogCnt:lt('+shown+')').fadeIn();
       } else {
-        $('.blogCnt:lt('+items+')').show();
+        $('.blogCnt:lt('+items+')').fadeIn();
         $('#loadMore').hide();
       }
-  });
-  $('.less').click(function () {
-      $('.blogCnt').not(':lt(3)').hide();
-      $('#loadMore').show();
-      $('.less').hide();
   });
 });
