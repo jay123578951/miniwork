@@ -46,13 +46,55 @@
   </header>
 
   <main>
-    <section class="d-flex align-items-center mt-7 mt-lg-nav">
-      <div class="w-100 fullpage position-relative d-flex justify-content-center align-items-center">
-        <div class="text-center">
-          <img class="mb-5 mt-7 mt-lg-0 ml-2" src="./assets/images/contactDonePage_img.svg" alt="">
-          <h2 class="h2 mb-3">&nbsp;&nbsp;&nbsp;感謝您！<span class="d-block">我們正在處理訊息</span></h2>
-          <p class="text-info mb-7">我們會盡快聯絡您，請保持聯繫</p>
-          <a class="d-block mb-7 mb-lg-0" href="index.html">回到首頁</a>
+    <section class="mt-7 mt-lg-nav mb-7">
+      <div class="d-flex align-items-stretch">
+        <div class="w-50 d-flex justify-content-center align-items-center bg-light px-3 px-lg-6">
+          <div>
+            <p class="text-info font-weight-bold mb-3">網頁設計趨勢</p>
+            <h2 class="h2">
+              暗模式現在很熱
+            </h2>
+          </div>
+        </div>
+        <div class="w-50">
+          <div class="card__4-to-3">
+            <div class="card__4-to-3__cnt">
+              <img src="./assets/images/blog_img02.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 m-auto">
+            <div class="blogCnt__block mb-5">
+              <p>
+                Dark mode 是近兩年來蠻熱門的議題, 講白了, 它就是一種 theme, 一種依照當前環境做區分的 theme, 更是一種讓服務貼近生活的態度.
+                <br>
+              </p>
+              <h3 class="h3">如果你的服務不支援 dark mode 會怎樣 ?</h3>
+              <p>
+                老實說一點都不會怎樣, 只是…在特定的環境下, 會讓 user 在使用上會感到吃力且疲倦, 試想 facebook 好了, 它的基調大多是白色背景單配黑色的文字, 在燈光明亮的狀態下瀏覽或許感到舒適, 但是, 如果在昏暗亦或是睡前躺在床上使用時, 眼睛便會因為對比的銳利而感到疲憊, 我想…這都不是我們想提供給 user 的感受.
+                所以, 除了 OS 提供 dark mode 的功能外, 服務所呈現的 web content 是否也能提供 dark mode 呢 ? 這便是我們今天想要討論的議題.
+                最新的 macOS 在 System Preference 裏提供了 light / dark mode 供 user 選擇, 大部分的 UI 也會依照 user 的選擇做出相對應的變化, 除此之外, 很多應用程式, 比方說 Chrome, 亦提供了 dark mode 這樣的 theme 讓 user 有更多的選擇, 顯示說 dark mode 不僅僅是一種潮流, 更是一個良好的產品態度的彰顯.
+                在 WWDC 2019 便有一環講到如何讓 web content support dark mode (iOS 13). 而且 Android Q 亦有 support dark theme.
+              </p>
+              <h3 class="h3">Nothing but CSS</h3>
+              <p>
+                如同上段所述, dark mode 就是一種 theme, 也就是說先決條件必須要有一套完整的 design language, 一但有了明確且完整的 design language 後, 剩下的事情就相對簡單許多.
+                <br>
+                如下所示, 這是筆者拿來示範用的 demo site (light mode).
+              </p>
+              <img src="https://miro.medium.com/max/3840/1*ClUAJqRnGOeOxXNMLrE6Xg.png" alt="">
+              <p>
+                我們的目標很明確, 即設計一 CSS dark mode 的 theme, 讓 web page 可以自動的依據當前系統設定, 自動將 web content 轉換成 dark mode
+              </p>
+              <img src="https://miro.medium.com/max/3840/1*Tg3qkeyaVTYyzokO93XRAg.png" alt="">
+              <p>在 CSS 的設定上, 其實非常的簡單, 只要明確在 root 定義 color-scheme, 其實便已完成了</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -133,7 +175,8 @@
   </footer>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
