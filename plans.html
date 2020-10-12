@@ -59,7 +59,7 @@
               <div class="text-center px-3 px-lg-6 py-5 py-md-6">
                 <h3 class="h3 border-bottom mb-4 pb-4">輕量型</h3>
                 <div>
-                  <h2 class="h2 mb-4">$10,000</h2>
+                  <h2 class="h2 mb-4">$ 15,000<sub class="text-size-normal"> / 首年</sub></h2>
                   <ul class="text-left mb-5 mb-md-6">
                     <li class="d-flex align-items-start mb-2">
                       <span class="material-icons text-warning mr-2">thumb_up</span>
@@ -67,10 +67,10 @@
                     </li>
                     <li class="d-flex align-items-start">
                       <span class="material-icons text-warning mr-2">monetization_on</span>
-                      <p class="m-0">首年繳 <span class="text-primary font-weight-bold">$15,000</span><br>次年繳 <span class="text-primary font-weight-bold">$10,000</span>（優惠價格）</p>
+                      <p class="m-0">次年繳 <span class="text-primary font-weight-bold">$9,800</span>（優惠價格）</p>
                     </li>
                   </ul>
-                  <button type="button" class="btnMain btn btn-primary" value="option__basic" onclick="">免費試用</button>
+                  <button type="button" class="btnMain btn btn-primary" value="option__basic" onclick="go_try_out('輕量型')">免費試用</button>
                 </div>
                 <ul class="d-block d-md-none text-left border-top mt-5 pt-5">
                   <li class="mb-2">
@@ -111,7 +111,7 @@
               <div class="text-center px-3 px-lg-6 py-5 py-md-6">
                 <h3 class="h3 border-bottom mb-4 pb-4">高階型</h3>
                 <div>
-                  <h2 class="h2 mb-4">$ 20,000</h2>
+                  <h2 class="h2 mb-4">$ 35,000<sub class="text-size-normal"> / 首年</sub></h2>
                   <ul class="text-left mb-5 mb-md-6">
                     <li class="d-flex align-items-start mb-2">
                       <span class="material-icons text-warning mr-2">thumb_up</span>
@@ -119,10 +119,10 @@
                     </li>
                     <li class="d-flex align-items-start">
                       <span class="material-icons text-warning mr-2">monetization_on</span>
-                      <p class="m-0">首年繳 <span class="text-primary font-weight-bold">$35,000</span><br>次年繳 <span class="text-primary font-weight-bold">$20,000</span>（優惠價格）</p>
+                      <p class="m-0">次年繳 <span class="text-primary font-weight-bold">$15,000</span>（優惠價格）</p>
                     </li>
                   </ul>
-                  <button type="button" class="btnMain btn btn-primary" value="option__pro" onclick="">免費試用</button>
+                  <button type="button" class="btnMain btn btn-primary" value="option__pro" onclick="go_try_out('高階型')">免費試用</button>
                 </div>
                 <ul class="d-block d-md-none text-left border-top mt-5 pt-5">
                   <li class="mb-2">
@@ -170,10 +170,10 @@
                     </li>
                     <li class="d-flex align-items-start">
                       <span class="material-icons text-warning mr-2">monetization_on</span>
-                      <p class="m-0">首年繳 <span class="text-primary font-weight-bold">$50,000</span><br>次年後依需求調整優惠價格</p>
+                      <p class="m-0">次年後依需求調整優惠價格</p>
                     </li>
                   </ul>
-                  <button type="button" class="btnMain btn btn-primary" value="option__customize" onclick="">聯絡我們</button>
+                  <button type="button" class="btnMain btn btn-primary" value="option__customize" onclick="go_try_out('客製型')">聯絡我們</button>
                 </div>
                 <ul class="d-block d-md-none text-left border-top mt-5 pt-5">
                   <li class="mb-2">
@@ -225,18 +225,18 @@
                 <h4 class="h4">計畫費用</h4>
               </div>
             </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">首年費用</div>
-              <div class="col-3 text-secondary text-center">15,000</div>
-              <div class="col-3 text-secondary text-center">35,000</div>
-              <div class="col-3 text-secondary text-center">50,000 起</div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">次年費用</div>
-              <div class="col-3 text-secondary text-center">10,000</div>
-              <div class="col-3 text-secondary text-center">20,000</div>
-              <div class="col-3 text-secondary text-center">依方案</div>
-            </div>
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">首年費用</li>
+              <li class="col-3 text-secondary text-center">15,000</li>
+              <li class="col-3 text-secondary text-center">35,000</li>
+              <li class="col-3 text-secondary text-center">50,000 起</li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">次年費用</li>
+              <li class="col-3 text-secondary text-center">9,800</li>
+              <li class="col-3 text-secondary text-center">15,000</li>
+              <li class="col-3 text-secondary text-center">依方案</li>
+            </ul>
           </div>
           <div class="mb-5">
             <div class="row mb-3">
@@ -244,54 +244,54 @@
                 <h4 class="h4">網站基礎功能</h4>
               </div>
             </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">基本單元擴充</div>
-              <div class="col-3 text-center">
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">基本單元擴充</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">SEO優化設定</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">SEO優化設定</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">RWD 響應式設計</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">RWD 響應式設計</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">多樣化設計主題</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">多樣化設計主題</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="mb-5">
             <div class="row mb-3">
@@ -299,90 +299,90 @@
                 <h4 class="h4">商品營運系統</h4>
               </div>
             </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">商品管理</div>
-              <div class="col-3 text-secondary text-center">
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">商品管理</li>
+              <li class="col-3 text-secondary text-center">
                 1000 件
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 無限
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 無限
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">購物車</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">購物車</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">訂單管理</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">訂單管理</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">金物流介接</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">金物流介接</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">商品庫存管理</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">商品庫存管理</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">會員系統</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">會員系統</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">電子發票介接</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">電子發票介接</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-gray-500">remove</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="mb-5">
             <div class="row mb-3">
@@ -390,78 +390,78 @@
                 <h4 class="h4">多元行銷模組</h4>
               </div>
             </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">自訂折扣優惠</div>
-              <div class="col-3 text-center">
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">自訂折扣優惠</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">優惠卷(折扣碼)</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">優惠卷(折扣碼)</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">訂單管理</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">訂單管理</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">紅利點數</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">紅利點數</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">限時購買</div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">限時購買</li>
+              <li class="col-3 text-secondary text-center">
                 10 組
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 不限
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 不限
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">一頁式商店</div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">一頁式商店</li>
+              <li class="col-3 text-secondary text-center">
                 10 組
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 不限
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 不限
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="mb-5">
             <div class="row mb-3">
@@ -469,42 +469,42 @@
                 <h4 class="h4">聯盟(網紅)行銷機制</h4>
               </div>
             </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">聯盟分潤比例</div>
-              <div class="col-3 text-center">
+            <ul class="row border-bottom py-2">
+              <li class="col-3">聯盟分潤比例</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-gray-500">remove</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">行銷推廣機制</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">行銷推廣機制</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-gray-500">remove</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">分潤訂單報表</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">分潤訂單報表</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-gray-500">remove</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="mb-5">
             <div class="row mb-3">
@@ -512,42 +512,42 @@
                 <h4 class="h4">Line 機器人工具</h4>
               </div>
             </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">聯盟分潤比例</div>
-              <div class="col-3 text-center">
+            <ul class="row border-bottom py-2">
+              <li class="col-3">聯盟分潤比例</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-gray-500">remove</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">行銷推廣機制</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom pb-2">
+              <li class="col-3">行銷推廣機制</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-gray-500">remove</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">分潤訂單報表</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">分潤訂單報表</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-gray-500">remove</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="mb-5">
             <div class="row mb-3">
@@ -555,54 +555,54 @@
                 <h4 class="h4">營運分析報表</h4>
               </div>
             </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">取消/退貨訂單統計</div>
-              <div class="col-3 text-center">
+            <ul class="row border-bottom py-2">
+              <li class="col-3">取消/退貨訂單統計</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">商品銷量報表</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">商品銷量報表</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">訂單報表匯出</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">訂單報表匯出</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">會員購買金額統計</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">會員購買金額統計</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="mb-5">
             <div class="row mb-3">
@@ -610,54 +610,54 @@
                 <h4 class="h4">後台管理</h4>
               </div>
             </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">網站管理後台</div>
-              <div class="col-3 text-center">
+            <ul class="row border-bottom py-2">
+              <li class="col-3">網站管理後台</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">Google Analytics 追蹤工具</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">Google Analytics 追蹤工具</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">前端語言的權限開放</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">前端語言的權限開放</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">會員購買金額統計</div>
-              <div class="col-3 text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">會員購買金額統計</li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-              <div class="col-3 text-center">
+              </li>
+              <li class="col-3 text-center">
                 <span class="material-icons text-secondary">done</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="mb-7">
             <div class="row mb-3">
@@ -665,46 +665,46 @@
                 <h4 class="h4">量身設計</h4>
               </div>
             </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">視覺設計</div>
-              <div class="col-3 text-secondary text-center">
+            <ul class="row border-bottom py-2">
+              <li class="col-3">視覺設計</li>
+              <li class="col-3 text-secondary text-center">
                 依需求報價
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 依需求報價
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 依需求報價
-              </div>
-            </div>
-            <div class="row border-bottom py-2">
-              <div class="col-3">功能設計</div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+            </ul>
+            <ul class="row border-bottom py-2">
+              <li class="col-3">功能設計</li>
+              <li class="col-3 text-secondary text-center">
                 依需求報價
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 依需求報價
-              </div>
-              <div class="col-3 text-secondary text-center">
+              </li>
+              <li class="col-3 text-secondary text-center">
                 依需求報價
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div>
-            <div class="row justify-content-end">
-              <div class="col-3 text-center">
+            <ul class="row justify-content-end">
+              <li class="col-3 text-center">
                 <h4 class="h4 mb-4">輕量型</h4>
-                <button type="button" class="btnMain btn btn-primary" value="option__basic" onclick="">免費試用</button>
-              </div>
-              <div class="col-3 text-center">
+                <button type="button" class="btnMain btn btn-primary" value="option__basic" onclick="go_try_out('輕量型')">免費試用</button>
+              </li>
+              <li class="col-3 text-center">
                 <h4 class="h4 mb-4">高階型</h4>
-                <button type="button" class="btnMain btn btn-primary" value="option__pro" onclick="">免費試用</button>
-              </div>
-              <div class="col-3 text-center">
+                <button type="button" class="btnMain btn btn-primary" value="option__pro" onclick="go_try_out('高階型')">免費試用</button>
+              </li>
+              <li class="col-3 text-center">
                 <h4 class="h4 mb-4">客製型</h4>
-                <button type="button" class="btnMain btn btn-primary" value="option__customize" onclick="">聯絡我們</button>
-              </div>
-            </div>
+                <button type="button" class="btnMain btn btn-primary" value="option__customize" onclick="go_try_out('客製型')">聯絡我們</button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
