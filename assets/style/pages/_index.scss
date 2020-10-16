@@ -94,6 +94,11 @@
     height: 40vw;
     left: 29%;
   }
+  @include FullHD() {
+    width: 30vw;
+    height: 30vw;
+    left: 35%;
+  }
 }
 .circleWave__cnt--animation {
   animation: turn 4000ms infinite linear;
