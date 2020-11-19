@@ -4,6 +4,7 @@ var swiper = new Swiper('.swiper-container', {
   spaceBetween: 0,
   initialSlide : 1,
   grabCursor : true,
+  watchOverflow: true,
   breakpoints: {
     768: {
       slidesPerView: 3,
