@@ -10042,68 +10042,49 @@ ol {
           animation-delay: 0.5s;
 }
 
+.introduction--animation:hover .introductionImg {
+  background-size: 110%;
+}
+
+.introductionImg {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  width: calc(100% - 2rem);
+  height: 55%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .introductionImg {
+    width: calc(100% - 4rem);
+  }
+}
+
 .eSystem {
   color: #fff;
-  background: #0D47A1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1E489B), to(#4CAFF8));
+  background: linear-gradient(to top, #1E489B, #4CAFF8);
   cursor: pointer;
 }
 
-.eSystem:hover img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-}
-
-.eSystem img {
-  width: 100%;
-  -webkit-box-shadow: 0px 0px 1.5625rem 1px rgba(94, 98, 119, 0.2);
-          box-shadow: 0px 0px 1.5625rem 1px rgba(94, 98, 119, 0.2);
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-}
-
-@media (min-width: 1200px) {
-  .eSystem img {
-    width: 413px;
-  }
+.eSystem .eSystem__img {
+  background-image: url("../assets/images/introduction_img01.jpg");
 }
 
 .companyWebsite {
   color: #363636;
-  background: #E5E6E8;
+  background: -webkit-gradient(linear, left bottom, left top, from(#B5B5B5), to(#EAEAEA));
+  background: linear-gradient(to top, #B5B5B5, #EAEAEA);
   cursor: pointer;
 }
 
-.companyWebsite:hover .companyWebsite__img__case {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.companyWebsite:hover .companyWebsite__img__display {
-  -webkit-transform: translate3d(-1rem, -1rem, 0);
-          transform: translate3d(-1rem, -1rem, 0);
-}
-
 .companyWebsite .companyWebsite__img {
-  position: relative;
-}
-
-.companyWebsite .companyWebsite__img__case {
-  width: 100%;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.companyWebsite .companyWebsite__img__display {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  background-image: url("../assets/images/introduction_img02.jpg");
 }
 
 .lineRobot {

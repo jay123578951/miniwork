@@ -226,54 +226,44 @@
 }
 
 // Introduction
-.eSystem {
-  color: #fff;
-  background: #0D47A1;
-  cursor: pointer;
+.introduction--animation {
   &:hover {
-    img {
-      transform: scale(1.05);
-      transform-origin: 0% 100%;
+    .introductionImg {
+      background-size: 110%;
     }
   }
-  img {
-    width: 100%;
-    box-shadow: $box-shadow;
-    transform: scale(1);
-    // transition: transform 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000);
-    transform-origin: 0% 100%;
-    @include desktop-1200() {
-      width: 413px;
-    }
+}
+.introductionImg {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  width: calc(100% - 2rem);
+  height: 55%;
+  transform: translateX(-50%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include pad() {
+    width: calc(100% - 4rem);
+  }
+}
+.eSystem {
+  color: #fff;
+  background: linear-gradient(to top, #1E489B, #4CAFF8);
+  cursor: pointer;
+  .eSystem__img {
+    background-image: url("../assets/images/introduction_img01.jpg");
   }
 }
 .companyWebsite {
   color: $body-color;
-  background: #E5E6E8;
+  background: linear-gradient(to top, #B5B5B5, #EAEAEA);
   cursor: pointer;
-  &:hover {
-    .companyWebsite__img__case {
-      transform: scale(1.05);
-    }
-    .companyWebsite__img__display {
-      transform: translate3d(-1rem,-1rem,0);
-    }
-  }
   .companyWebsite__img {
-    position: relative;
-  }
-  .companyWebsite__img__case {
-    width: 100%;
-    transform: scale(1);
-  }
-  .companyWebsite__img__display {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate3d(0,0,0);
+    background-image: url("../assets/images/introduction_img02.jpg"); 
   }
 }
+
 // LineRobot
 .lineRobot {
   position: relative;
